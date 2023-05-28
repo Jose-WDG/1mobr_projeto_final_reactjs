@@ -1,4 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas);
 
 const GlobalStyle = createGlobalStyle`
   /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -12,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
    */
   :root{
     font-family: roboto, sans-serif,Inter, system-ui, Avenir, Helvetica, Arial;
+    --primary-color: #1c2022;
+    --primary-text-color: #ed145b;
+    --second-color: #080809;
+    --second-text-color: #616d72;
   }
 
   html {
@@ -296,6 +304,7 @@ const GlobalStyle = createGlobalStyle`
   [hidden] {
     display: none;
   }
+
 `;
 
 export default GlobalStyle;

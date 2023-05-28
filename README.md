@@ -34,13 +34,39 @@ Isso iniciará o servidor de desenvolvimento e você poderá acessar o site em `
 
 ## Arquitetura
 
-O projeto foi desenvolvido com uma arquitetura que segue os princípios de separação de responsabilidades. A estrutura de pastas segue o padrão recomendado pelo Vite:
+A arquitetura do projeto segue a abordagem MVC (Model-View-Controller), com a utilização do Styled-components para estilização dos componentes.
 
-- `src/`: Contém os arquivos principais do projeto.
-  - `components/`: Componentes reutilizáveis.
-  - `pages/`: Páginas do site.
-  - `styles/`: Estilos globais e estilos dos componentes.
-  - `utils/`: Funções utilitárias.
+A estrutura de diretórios do projeto é a seguinte:
+
+src/
+├── components/
+│ ├── common/
+│ │ ├── Button.js
+│ │ └── Input.js
+│ ├── freelancer/
+│ │ ├── FreelancerCard.js
+│ │ └── FreelancerDetails.js
+│ └── ...
+│
+├── controllers/
+│ ├── FreelancerController.js
+│ └── ...
+│
+├── models/
+│ ├── FreelancerModel.js
+│ └── ...
+│
+├── pages/
+│ ├── HomePage.js
+│ ├── FreelancerListPage.js
+│ └── ...
+│
+├── styles/
+│ ├── GlobalStyle.js
+│ └── ...
+│
+└── utils/
+├── api.js
 
 ## Personalidade e UI/UX
 

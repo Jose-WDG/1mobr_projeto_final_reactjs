@@ -38,35 +38,31 @@ A arquitetura do projeto segue a abordagem MVC (Model-View-Controller), com a ut
 
 A estrutura de diretórios do projeto é a seguinte:
 
-src/
-├── components/
-│ ├── common/
-│ │ ├── Button.js
-│ │ └── Input.js
-│ ├── freelancer/
-│ │ ├── FreelancerCard.js
-│ │ └── FreelancerDetails.js
-│ └── ...
-│
-├── controllers/
-│ ├── FreelancerController.js
-│ └── ...
-│
-├── models/
-│ ├── FreelancerModel.js
-│ └── ...
-│
-├── pages/
-│ ├── HomePage.js
-│ ├── FreelancerListPage.js
-│ └── ...
-│
-├── styles/
-│ ├── GlobalStyle.js
-│ └── ...
-│
-└── utils/
-├── api.js
+- `src/`: Contém os arquivos principais do projeto.
+  - `components/`: Componentes reutilizáveis.
+    - `common/`: Componentes comuns.
+      - `Button.js`
+      - `Input.js`
+    - `freelancer/`: Componentes relacionados aos freelancers.
+      - `FreelancerCard.js`
+      - `FreelancerDetails.js`
+    - ...
+  - `controllers/`: Controladores do projeto.
+    - `FreelancerController.js`
+    - ...
+  - `models/`: Modelos de dados do projeto.
+    - `FreelancerModel.js`
+    - ...
+  - `pages/`: Páginas do site.
+    - `HomePage.js`
+    - `FreelancerListPage.js`
+    - ...
+  - `styles/`: Estilos globais e estilos dos componentes.
+    - `GlobalStyle.js`
+    - ...
+  - `utils/`: Funções utilitárias.
+    - `api.js`
+    - ...
 
 ## Personalidade e UI/UX
 

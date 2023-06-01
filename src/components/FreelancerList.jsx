@@ -49,28 +49,48 @@ const StyledLink = styled(Link)`
   }
 `;
 
-return (
-  <FreelancerListContainer>
-    {freelancers.map((freelancer, index) => (
-      <FreelancerCard key={index}>
-        <FreelancerName>{freelancer.name}</FreelancerName>
-        <FreelancerImage src={freelancer.photo} alt={freelancer.name} />
-        <FreelancerTechnologies>
-          Tecnologias:
-          {freelancer.technologies.map((t, i) => (
-            <SkillItem>{t}</SkillItem>
-          ))}
-        </FreelancerTechnologies>
-        <FreelancerRecentWork>
-          Trabalho: {freelancer.recentWork}
-        </FreelancerRecentWork>
-        <StyledLink to={`/freelancer/${freelancer.id}`}>
-          Ver detalhes do freelancer
-        </StyledLink>
-      </FreelancerCard>
-    ))}
-  </FreelancerListContainer>
-);
+const FreelancerList = () => {
+  const freelancers = [
+    {
+      id: 1,
+      name: 'José Ramalho',
+      photo: '/src/assets/foto-jose.jpg',
+      technologies: [
+        'Android', 'Java', 'Kotlin', 'teste', 'test', 'test'
+      ],
+      recentWork: 'BRQ digital solutions',
+    },
+    {
+      id: 2,
+      name: 'Felipe Araújo',
+      photo: '/src/assets/foto-felipe.png',
+      technologies: ['Swift', 'Dart', 'Fluter'],
+      recentWork: 'Project C, Project D',
+    },
+    // Add more freelancers as needed
+  ];
+  return (
+    <FreelancerListContainer>
+      {freelancers.map((freelancer, index) => (
+        <FreelancerCard key={index}>
+          <FreelancerName>{freelancer.name}</FreelancerName>
+          <FreelancerImage src={freelancer.photo} alt={freelancer.name} />
+          <FreelancerTechnologies>
+            Tecnologias:
+            {freelancer.technologies.map((t, i) => (
+              <SkillItem>{t}</SkillItem>
+            ))}
+          </FreelancerTechnologies>
+          <FreelancerRecentWork>
+            Trabalho: {freelancer.recentWork}
+          </FreelancerRecentWork>
+          <StyledLink to={`/freelancer/${freelancer.id}`}>
+            Ver detalhes do freelancer
+          </StyledLink>
+        </FreelancerCard>
+      ))}
+    </FreelancerListContainer>
+  );
 };
 
 export default FreelancerList;

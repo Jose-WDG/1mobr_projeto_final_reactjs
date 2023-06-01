@@ -7,7 +7,7 @@ const FreelancerDetails = () => {
 
   return (
     // Renderize os detalhes do freelancer
-    <></>
+    <>{id}</>
   );
 };
 

@@ -6,9 +6,8 @@ import Rota from './pages/Routes.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Rota />
     <GlobalStyle />
-    
+    <Rota />
   </React.StrictMode>,
 )
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import SkillItem from './SkillItem';
 
 const FreelancerListContainer = styled.ul`
@@ -40,6 +41,7 @@ const FreelancerRecentWork = styled.p`
 const FreelancerList = () => {
   const freelancers = [
     {
+      id: 1,
       name: 'José Ramalho',
       photo: '/src/assets/foto-jose.jpg',
       technologies: [
@@ -48,6 +50,7 @@ const FreelancerList = () => {
       recentWork: 'BRQ digital solutions',
     },
     {
+      id: 2,
       name: 'Felipe Araújo',
       photo: '/src/assets/foto-felipe.png',
       technologies: ['Swift', 'Dart', 'Fluter'],
@@ -71,6 +74,9 @@ const FreelancerList = () => {
           <FreelancerRecentWork>
             Trabalho: {freelancer.recentWork}
           </FreelancerRecentWork>
+          <Link to={`/freelancer/${freelancer.id}`}>
+    Ver detalhes do freelancer
+  </Link>
         </FreelancerCard>
       ))}
     </FreelancerListContainer>

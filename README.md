@@ -21,16 +21,22 @@ Isso iniciará o servidor de desenvolvimento e você poderá acessar o site em `
 
 ## Funcionalidades
 
-- Lista de freelancers disponíveis:
+- Lista de freelancers disponíveis (DONE):
 
-  - Nome
-  - Foto
-  - Principais tecnologias
-  - Últimos trabalhos
+  - Nome(DONE)
+  - Foto(DONE)
+  - Principais tecnologias(DONE)
+  - Últimos trabalhos(DONE)
 
-- Página de detalhes de um freelancer:
+- Página de detalhes de um freelancer(DONE):
+
   - Bio (descrição individual de cada freelancer)
   - Opções de contato
+
+- Aquitetura em MVC
+  - Organização das pastas
+  - Controllers
+  - Models
 
 ## Arquitetura
 

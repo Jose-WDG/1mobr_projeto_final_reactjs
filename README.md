@@ -30,8 +30,8 @@ Isso iniciará o servidor de desenvolvimento e você poderá acessar o site em `
 
 - Página de detalhes de um freelancer(DONE):
 
-  - Bio (descrição individual de cada freelancer)
-  - Opções de contato
+  - Bio (descrição individual de cada freelancer)(DONE)
+  - Opções de contato(DONE)
 
 - Aquitetura em MVC
   - Organização das pastas

@@ -72,7 +72,7 @@ const NavLink = styled.a`
   }
 `;
 
-const Navbar = () => {
+const NavbarComponen = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -98,4 +98,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarComponen;

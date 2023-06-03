@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SkillItem = styled.div`
+const SkillItemComponent = styled.div`
   position: relative;
   display: inline-block;
   margin: 0.2rem;
@@ -15,4 +15,4 @@ const SkillItem = styled.div`
   font-weight: 400;
 `;
 
-export default SkillItem;
+export default SkillItemComponent;

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import FreelancerList from '../components/FreelancerList'
-import Container from '../components/Container'
-import Navbar from '../components/Navbar'
+import FreelancerListComponent from '../components/FreelancerListComponent'
+import ContainerComponent from '../components/ContainerComponent'
+import NavbarComponen from '../components/NavbarComponent'
 import React from 'react'
 
 function Home() {
@@ -9,10 +9,10 @@ function Home() {
 
   return (
     <>
-      <Navbar />
-      <Container>
-        <FreelancerList />
-      </Container>
+      <NavbarComponen />
+      <ContainerComponent>
+        <FreelancerListComponent />
+      </ContainerComponent>
     </>
   )
 }

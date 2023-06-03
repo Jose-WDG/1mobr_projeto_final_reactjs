@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const ContainerComponent = styled.div`
  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -14,4 +14,4 @@ const Container = styled.div`
 
 `;
 
-export default Container;
+export default ContainerComponent;

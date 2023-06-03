@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import SkillItem from './SkillItem';
+import SkillItemComponent from './SkillItemComponent';
 
 const FreelancerListContainer = styled.ul`
   list-style: none;
@@ -49,7 +49,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const FreelancerList = () => {
+const FreelancerListComponent = () => {
   const freelancers = [
     {
       id: 1,
@@ -109,7 +109,7 @@ const FreelancerList = () => {
           <FreelancerTechnologies>
             Tecnologias:
             {freelancer.technologies.map((t, i) => (
-              <SkillItem>{t}</SkillItem>
+              <SkillItemComponent>{t}</SkillItemComponent>
             ))}
           </FreelancerTechnologies>
           <FreelancerRecentWork>
@@ -124,4 +124,4 @@ const FreelancerList = () => {
   );
 };
 
-export default FreelancerList;
+export default FreelancerListComponent;

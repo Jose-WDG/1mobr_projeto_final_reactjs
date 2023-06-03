@@ -136,7 +136,8 @@ const FreelancerDetails = () => {
   const { id } = useParams();
 
   // Use o ID do freelancer para carregar os detalhes do freelancer correspondente
-  let freelancer = freelancers.find((f) => f.id === parseInt(id, 10));
+
+  let freelancer = freelancers.find((f) => f.id === parseInt(id || '0', 10));
 
   if (!freelancer) {
     return <p>Freelancer não encontrado</p>;

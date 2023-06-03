@@ -16,7 +16,8 @@ const NavbarContainer = styled.nav`
   }
 `;
 
-const LogoText = styled.h1`
+const LogoText = styled.a`
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
   color: var(--primary-text-color);
@@ -80,7 +81,7 @@ const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <LogoText>Fiap Freelancer</LogoText>
+      <LogoText href="/">Fiap Freelancer</LogoText>
       <MenuButton onClick={toggleMenu}>
         {isOpen ? (
           <FontAwesomeIcon icon={faTimes} />
@@ -91,12 +92,6 @@ const Navbar = () => {
       <NavList isOpen={isOpen}>
         <NavItem>
           <NavLink href="/">Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/about">About</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/contact">Contact</NavLink>
         </NavItem>
       </NavList>
     </NavbarContainer>

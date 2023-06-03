@@ -66,8 +66,24 @@ const FreelancerDetails = () => {
     {
       id: 2,
       name: 'Felipe Araújo',
-      photo: '/assets/foto-felipe.png',
+      photo: '/src/assets/foto-felipe.png',
       technologies: ['Swift', 'Dart', 'Fluter'],
+      biography: "Desenvolvedor mobile altamente experiente, com uma sólida formação em análise e desenvolvimento" +
+        "de sistemas e 3 anos de experiência em desenvolvimento de aplicativos móveis." +
+
+        "Meu foco principal é trabalhar com grandes corporações financeiras, criando aplicativos inovadores e" +
+        "funcionais que atendam às necessidades específicas de seus clientes." +
+
+        "Com um bom conhecimento em tecnologias móveis, sou capaz de criar aplicativos móveis" +
+        "robustos e escaláveis. Conhecimentos em iOS e Android, estou sempre procurando maneiras de usar as tecnologias mais recentes para" +
+        "aprimorar os projetos." +
+
+        "Excelente comunicação e trabalho em estreita colaboração com minha equipe para garantir máxima qualidade." +
+        "Comprometido em entregar projetos dentro do prazo." +
+
+        "Quando não estou trabalhando, gosto de jogar video game e adoro viajar para novos lugares." +
+        "Estou sempre procurando maneiras de crescer na minha carreira como desenvolvedor, buscando aprimorar" +
+        "minhas habilidades e aprender novas tecnologias para fazer projetos de qualidade.",
       recentWork: 'Project C, Project D',
     },
     // Add more freelancers as needed

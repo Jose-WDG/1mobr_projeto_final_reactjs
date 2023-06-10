@@ -1,0 +1,12 @@
+var alunos:Aluno = [
+	Aluno(name:"Felipe Costa Araújo",rm: "346499"),
+	Aluno(name:"José Ramalho da Silva Neto",rm: "347439")
+	]; 
+
+var response = await http.get("https://github.com/Jose-WDG/1mobr_projeto_final_reactjs");
+
+var nota = calNota(response.body);
+
+console.log(nota);
+
+-> 10 😎

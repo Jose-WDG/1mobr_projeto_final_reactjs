@@ -1,4 +1,3 @@
-import React from 'react';
 import ContainerComponent from '../components/ContainerComponent';
 import NavbarComponen from '../components/NavbarComponent';
 import FreelancerDetailsComponent from '../components/FreelancerDetailsComponent';
@@ -15,3 +14,5 @@ const FreelancerDetails = () => {
 };
 
 export default FreelancerDetails;
+
+
